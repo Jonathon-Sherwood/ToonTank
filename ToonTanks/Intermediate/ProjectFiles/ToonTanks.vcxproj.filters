@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ToonTanks.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8079DA0D-306D-4AC2-BEA1-6B04EBCB4E05}</UniqueIdentifier>
+      <UniqueIdentifier>{68AC3AAD-B496-4B9D-AC94-1CF31CBD72EC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ToonTanks.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{5E0F74C6-057A-4AA9-9D61-C776B5488231}</UniqueIdentifier>
+      <UniqueIdentifier>{CE02CC4E-ACB2-4133-8752-B493E5C3B277}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ToonTanks">
-      <UniqueIdentifier>{709D7CBB-9600-433E-828F-25ADC005402F}</UniqueIdentifier>
+      <UniqueIdentifier>{FF845D77-3B7F-4911-90AF-43506BC7C208}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ToonTanks\ToonTanks.Build.cs">
       <Filter>Source\ToonTanks</Filter>
@@ -39,7 +39,7 @@
       <Filter>Source\ToonTanks</Filter>
     </ClInclude>
     <Filter Include="Source\ToonTanks\Pawns">
-      <UniqueIdentifier>{23D96ECE-BD0D-4AE6-AC40-388EBE43F30C}</UniqueIdentifier>
+      <UniqueIdentifier>{89E69964-E87D-4468-8922-EEAE61256A92}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ToonTanks\Pawns\PawnBase.cpp">
       <Filter>Source\ToonTanks\Pawns</Filter>
@@ -51,6 +51,12 @@
       <Filter>Source\ToonTanks\Pawns</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ToonTanks\Pawns\PawnTank.h">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ToonTanks\Pawns\PawnTurret.cpp">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Pawns\PawnTurret.h">
       <Filter>Source\ToonTanks\Pawns</Filter>
     </ClInclude>
   </ItemGroup>
