@@ -75,6 +75,14 @@ void APawnTank::Rotate()
 void APawnTank::HandleDestruction()
 {
 	Super::HandleDestruction();
-	Destroy();
 
+	bIsPlayerAlive = false;
+
+	SetActorHiddenInGame(true);
+	SetActorTickEnabled(false);
+}
+
+bool APawnTank::GetIsPlayerAlive()
+{
+	return bIsPlayerAlive;
 }

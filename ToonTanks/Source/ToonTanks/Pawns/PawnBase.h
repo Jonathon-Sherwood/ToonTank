@@ -8,6 +8,7 @@
 
 class UCapsuleComponent; //Needs to be forward declared to reduce includes
 class AProjectileBase;
+class UHealthComponent;
 
 UCLASS()
 class TOONTANKS_API APawnBase : public APawn
@@ -23,9 +24,20 @@ private:
 	UStaticMeshComponent* TurretMesh; //Rotatable turret
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USceneComponent* ProjectileSpawnPoint; //Editable representation of where projectiles come from. Includes Transform
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UHealthComponent* HealthComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Projectile Type", meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<AProjectileBase> ProjectileClass;
+
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	UParticleSystem* DeathParticle;
+
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	USoundBase* DeathSound;
+
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	TSubclassOf<UCameraShake> DeathShake;
 
 public:
 	// Sets default values for this pawn's properties
